@@ -8,8 +8,7 @@ twitter_username: liamness
 github_username: liamness
 
 # Build settings
-source: jekyll
-destination: jekyll/_site
+# Maybe don't need this?
 keep_files: [
     bower_components,
     download,
