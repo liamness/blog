@@ -1,0 +1,7 @@
+{% capture svg_cache_bust %}
+{% if site.svg_md5 %}?v={{ site.svg_md5 }}{% endif %}
+{% endcapture %}
+
+<svg class="icon">
+  <use xlink:href="/svg/icons.svg{{ svg_cache_bust }}#{{ include.name }}"/>
+</svg>

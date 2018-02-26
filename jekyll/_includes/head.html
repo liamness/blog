@@ -1,3 +1,6 @@
+{% capture css_cache_bust %}
+{% if site.css_md5 %}?v={{ site.css_md5 }}{% endif %}
+{% endcapture %}
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -7,5 +10,5 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
-    <link rel="stylesheet" type="text/css" href="/blog.css" />
+    <link rel="stylesheet" type="text/css" href="/blog.css{{ css_cache_bust }}" />
 </head>
