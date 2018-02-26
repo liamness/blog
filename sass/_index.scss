@@ -13,7 +13,7 @@
     height: 300px;
     display: table;
     position: relative;
-    hgroup {
+    &__text {
         padding: 10px;
         display: table-cell;
         vertical-align: middle;
@@ -141,7 +141,7 @@
 @media all and (min-width: 360px) and (min-height: 480px) {
     .main-header{
         height: 450px;
-        hgroup {
+        &__text {
             padding: 15px;
             h1 {
                 font-size: 48px;
@@ -160,7 +160,7 @@
 @media all and (min-width: 480px) and (min-height: 640px) {
     .main-header{
         height: 600px;
-        hgroup {
+        &__text {
             padding: 20px;
             h1 {
                 font-size: 60px;
@@ -179,7 +179,7 @@
 @media all and (min-width: 600px) and (min-height: 800px) {
     .main-header  {
         height: 750px;
-        hgroup {
+        &__text {
             padding: 25px;
             h1 {
                 font-size: 72px;
@@ -198,7 +198,7 @@
 @media all and (min-width: 720px) and (min-height: 960px) {
     .main-header  {
         height: 900px;
-        hgroup {
+        &__text {
             padding: 30px;
             h1 {
                 font-size: 84px;
