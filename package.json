@@ -11,6 +11,7 @@
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "cssnano": "^4.0.0-rc.2",
     "eslint": "^4.18.0",
     "eslint-config-airbnb-base": "^12.1.0",
@@ -37,13 +38,7 @@
     "public"
   ],
   "scripts": {
-    "build-html": "docker run --rm -v ${PWD}/jekyll:/usr/src/blog html-builder jekyll build && html-minifier -c html-minifier.conf --input-dir jekyll/_site --output-dir public",
-    "build-js": "webpack --mode production",
-    "build-css": "node-sass sass/blog.scss | postcss -o public/blog.css",
-    "build-icons": "svgstore icons/*.svg | svgo -i - -o - --disable=cleanupIDs --disable=removeUselessDefs > public/svg/icons.svg",
-    "build": "yarn build-html && yarn build-js && yarn build-css && yarn build-icons"
-  },
-  "dependencies": {
-    "babel-preset-env": "^1.6.1"
+    "build": "./bin/clean.sh && ./bin/build.sh",
+    "watch": "./bin/clean.sh && ./bin/watch.sh"
   }
 }
