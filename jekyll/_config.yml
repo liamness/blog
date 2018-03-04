@@ -10,14 +10,13 @@ github_username: liamness
 # Build settings
 # Maybe don't need this?
 keep_files: [
-    bower_components,
     download,
     images,
+    svg,
     CNAME,
-    style.css,
+    blog.css,
+    blog.js,
     favicon.ico,
-    icons.svg,
-    ga.html,
     googleca77a3c8b1ee82be.html
 ]
 kramdown:

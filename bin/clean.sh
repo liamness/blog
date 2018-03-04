@@ -1,5 +1,8 @@
+#!/bin/bash
+set -e
+
 rm -rf public/posts
 rm -f public/svg/*.svg
 rm -f public/*.js
 rm -f public/*.css
-rm -f public/*.html
+find public -name *.html ! -name google*.html -delete

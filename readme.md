@@ -9,9 +9,17 @@ Install docker and yarn somehow. Then do these things:
 
 ```bash
 docker build -t html-builder .
+yarn
+```
+
+## Production
+
+```bash
 yarn build
 ```
 
-## To Do
+## Development
 
-Need to make a more development-friendly build process, with hot reloading etc
+```bash
+yarn watch
+```
