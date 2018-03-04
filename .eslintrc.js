@@ -7,8 +7,6 @@ module.exports = {
   env: { browser: true },
   plugins: ['compat'],
   rules: {
-    'import/no-extraneous-dependencies': [1, { devDependencies: true }],
-    'max-len': [2, 120],
     'compat/compat': 2,
   },
   overrides: {
