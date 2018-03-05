@@ -1,4 +1,3 @@
-# Site settings
 title: liamness.co.uk
 email: liam.p.duffy@gmail.com
 description: all the liamness a liam could liam
@@ -6,19 +5,6 @@ url: 'https://liamness.co.uk/'
 baseurl: ''
 twitter_username: liamness
 github_username: liamness
-
-# Build settings
-# Maybe don't need this?
-keep_files: [
-    download,
-    images,
-    svg,
-    CNAME,
-    blog.css,
-    blog.js,
-    favicon.ico,
-    googleca77a3c8b1ee82be.html
-]
 kramdown:
     auto_ids: false
 markdown: kramdown

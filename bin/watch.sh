@@ -40,10 +40,10 @@ do
 done &
 
 # Watch HTML
-docker run --rm -v ${PWD}:/usr/src/blog \
-  html-builder jekyll build --source jekyll --destination public --watch &
+docker run --rm -v ${PWD}/jekyll:/usr/src/blog \
+  html-builder jekyll build --watch &
 
 # Start Server
-browser-sync start --no-open --no-ui --no-notify --server 'public' --files 'public' &
+browser-sync start --no-open --no-ui --no-notify --server 'jekyll/_site' --serveStatic 'public' --files 'jekyll/_site,public' &
 
 wait
