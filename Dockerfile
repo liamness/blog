@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:3.7.2
+FROM jekyll/minimal:3.7.2
 
 RUN mkdir -p /usr/src/blog
 
