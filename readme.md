@@ -5,12 +5,7 @@ jekyll](https://jekyllrb.com) to generate the html, and a bunch of patched-toget
 
 ## Getting Started
 
-Install docker and yarn somehow. Then do these things:
-
-```bash
-docker build -t html-builder .
-yarn
-```
+Install docker, docker-compose and yarn somehow.
 
 ## Production
 
