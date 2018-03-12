@@ -9,7 +9,8 @@ services:
       - ./jekyll:/usr/src/blog
     ports:
       - "4000:4000"
-    command: jekyll serve --incremental
+      - "35729:35729"
+    command: jekyll serve --incremental --livereload
 
   node-service:
     build:
