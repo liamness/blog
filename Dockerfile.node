@@ -1,0 +1,11 @@
+FROM node:8.9.4
+
+RUN apt-get update && apt-get install inotify-tools -y
+RUN mkdir -p /usr/src/blog
+
+ADD package.json /usr/src/blog
+ADD yarn.lock /usr/src/blog
+
+WORKDIR /usr/src/blog
+
+RUN yarn install

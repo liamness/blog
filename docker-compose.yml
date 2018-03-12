@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  jekyll-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.jekyll
+    volumes:
+      - ./jekyll:/usr/src/blog
+    ports:
+      - "4000:4000"
+    command: jekyll serve --incremental
+
+  node-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    volumes:
+      - ./package.json:/usr/src/blog/package.json
+      - ./bin:/usr/src/blog/bin
+      # Javascript
+      - ./js:/usr/src/blog/js
+      - ./webpack.config.js:/usr/src/blog/webpack.config.js
+      # CSS
+      - ./sass:/usr/src/blog/sass
+      - ./postcss.config.js:/usr/src/blog/postcss.config.js
+      # SVGs
+      - ./icons:/usr/src/blog/icons
+      # HTML
+      - ./jekyll/_site:/usr/src/blog/_site
+      - ./html-minifier.conf:/usr/src/blog/html-minifier.conf
+      # Server
+      - ./public:/usr/src/blog/public
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    command: yarn run bash -c "./bin/watch-node.sh"

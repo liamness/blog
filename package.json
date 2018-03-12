@@ -41,7 +41,10 @@
     "public"
   ],
   "scripts": {
+    "bash": "/bin/bash",
     "build": "./bin/clean.sh && ./bin/build.sh",
-    "watch": "./bin/clean.sh && ./bin/watch.sh"
+    "clean": "./bin/clean.sh",
+    "lint": "eslint .",
+    "watch": "./bin/clean.sh && docker-compose up"
   }
 }

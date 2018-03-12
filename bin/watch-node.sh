@@ -17,7 +17,7 @@ function build_css {
     postcss -o public/blog.css
 }
 
-build_css
+build_css &
 
 while
   inotifywait -qr -e close_write sass
@@ -31,7 +31,7 @@ function build_svgs {
     svgo -i - -o - --disable=cleanupIDs --disable=removeUselessDefs > public/svg/icons.svg
 }
 
-build_svgs
+build_svgs &
 
 while
   inotifywait -qr -e close_write icons
@@ -39,11 +39,7 @@ do
   build_svgs
 done &
 
-# Watch HTML
-docker run --rm -v ${PWD}/jekyll:/usr/src/blog \
-  html-builder jekyll build --watch &
-
-# Start Server
-browser-sync start --no-open --no-ui --no-notify --server 'jekyll/_site' --serveStatic 'public' --files 'jekyll/_site,public' &
+# Start Server - proxies Jekyll, but serves non-HTML assets from /public
+browser-sync start --no-open --no-notify --proxy http://jekyll-service:4000 --serveStatic 'public' --files 'public' &
 
 wait
