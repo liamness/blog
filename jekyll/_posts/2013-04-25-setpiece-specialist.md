@@ -5,7 +5,7 @@ date:           2013-04-25 00:01:22
 categories:     frontpage portfolio
 featured-image: setpiece.jpeg
 ---
-Set-Piece Specialist is my first ever game, or at least the first I have ever made from scratch. You can [click here](/setpiece-specialist) and try it out, as long as you are using a WebGL capable browser. It is a free kick simulator, where the player must try to score from increasingly difficult positions. They can control the power, direction and spin of the ball, all of which affect its flight in a realistic manner.
+Set-Piece Specialist is my first ever game, or at least the first I have ever made from scratch. You can [click here](https://liamness.github.io/setpiece-specialist) and try it out, as long as you are using a WebGL capable browser. It is a free kick simulator, where the player must try to score from increasingly difficult positions. They can control the power, direction and spin of the ball, all of which affect its flight in a realistic manner.
 
 {% include image.html src="/images/setpiece_1.jpeg" %}
 

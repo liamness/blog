@@ -5,7 +5,7 @@ date:           2013-02-26 03:00:16
 categories:     frontpage portfolio webgl
 featured-image: fractal.png
 ---
-This is a web app, and you are on the web, so you should really [click here and try it](/fractal-viewer). As long as you're not on a mobile device, or using internet explorer, it should just work! Actually if you are using a more recent Android device which can run Chrome (anything with an ARMv7 processor and running 4.0+), then it should work with a flag enabled. I would like to hear from you if you try this!
+This is a web app, and you are on the web, so you should really [click here and try it](https://liamness.github.io/fractal-viewer). As long as you're not on a mobile device, or using internet explorer, it should just work! Actually if you are using a more recent Android device which can run Chrome (anything with an ARMv7 processor and running 4.0+), then it should work with a flag enabled. I would like to hear from you if you try this!
 
 {% include image.html src="/images/fractal_1.png" %}
 
