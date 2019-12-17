@@ -40,6 +40,6 @@ do
 done &
 
 # Start Server - proxies Jekyll, but serves non-HTML assets from /public
-browser-sync start --no-open --no-notify --proxy http://jekyll-service:4000 --serveStatic 'public' --files 'public' &
+browser-sync start --no-open --no-notify --proxy http://jekyll-service:4000 --serveStatic 'public' 'static' --files 'public' 'static' &
 
 wait

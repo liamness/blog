@@ -7,6 +7,7 @@
     "url": "git://github.com/liamness/blog.git"
   },
   "dependencies": {
+    "html-minifier": "^4.0.0",
     "svg4everybody": "^2.1.9"
   },
   "devDependencies": {
@@ -42,7 +43,7 @@
   "scripts": {
     "bash": "/bin/bash",
     "build": "yarn clean && ./bin/build.sh",
-    "clean": "rm -rf public/*",
+    "clean": "./bin/clean.sh",
     "lint": "eslint .",
     "watch": "yarn clean && docker-compose up"
   }

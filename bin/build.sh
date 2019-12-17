@@ -13,4 +13,8 @@ docker-compose run --rm \
   -e SVG_MD5="$(md5sum public/icons.svg | cut -c1-32)" \
   jekyll-service jekyll build
 
-cp -r jekyll/_site/* public
+docker-compose run --rm node-service yarn run bash -c "
+  html-minifier -c html-minifier.conf --input-dir _site --output-dir public
+"
+
+cp -rn static/* public
