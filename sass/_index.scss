@@ -21,13 +21,16 @@
         h1 {
             font-weight: 700;
             font-size: 36px;
-            margin: 0;
-            padding: 0 0 0.5em;
+            margin: 0 0 0.5em;
         }
         h2 {
             font-weight: 400;
             font-size: 18px;
-            margin: 0;
+            margin: 0 0 1em;
+        }
+        p {
+            font-style: italic;
+            font-size: 12px;
         }
     }
     .scroll-arrow {
@@ -149,6 +152,9 @@
             h2 {
                 font-size: 24px;
             }
+            p {
+                font-size: 13px;
+            }
         }
         .scroll-arrow {
             margin-left: -$arrowSize * 0.75;
@@ -167,6 +173,9 @@
             }
             h2 {
                 font-size: 30px;
+            }
+            p {
+                font-size: 14px;
             }
         }
         .scroll-arrow {
@@ -187,6 +196,9 @@
             h2 {
                 font-size: 36px;
             }
+            p {
+                font-size: 15px;
+            }
         }
         .scroll-arrow {
             margin-left: -$arrowSize * 1.25;
@@ -205,6 +217,9 @@
             }
             h2 {
                 font-size: 42px;
+            }
+            p {
+                font-size: 16px;
             }
         }
     }

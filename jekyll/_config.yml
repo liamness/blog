@@ -1,10 +1,7 @@
-title: liamness.co.uk
-email: liam.p.duffy@gmail.com
-description: all the liamness a liam could liam
+title: Liam Duffy | Software Engineer Based in East London
+description: Specialising in React, Typescript
 url: 'https://liamness.co.uk/'
 baseurl: ''
-twitter_username: liamness
-github_username: liamness
 kramdown:
     auto_ids: false
 markdown: kramdown
