@@ -45,6 +45,7 @@
     "build": "yarn clean && ./bin/build.sh",
     "clean": "./bin/clean.sh",
     "lint": "eslint .",
-    "watch": "yarn clean && docker-compose up"
+    "watch": "yarn clean && docker-compose up",
+    "deploy": "netlify deploy --dir public"
   }
 }

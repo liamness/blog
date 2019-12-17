@@ -18,3 +18,9 @@ yarn build
 ```bash
 yarn watch
 ```
+
+## Deployment
+
+```bash
+yarn deploy --prod
+```
