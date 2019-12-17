@@ -2,4 +2,5 @@
 .sass-cache
 jekyll/.jekyll-metadata
 jekyll/_site
+public
 node_modules

@@ -28,7 +28,7 @@ done &
 # Watch SVGs
 function build_svgs {
   svgstore icons/*.svg | \
-    svgo -i - -o - --disable=cleanupIDs --disable=removeUselessDefs > public/svg/icons.svg
+    svgo -i - -o - --disable=cleanupIDs --disable=removeUselessDefs > public/icons.svg
 }
 
 build_svgs &

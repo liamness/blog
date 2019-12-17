@@ -21,7 +21,6 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-compat": "^2.2.0",
     "eslint-plugin-import": "^2.8.0",
-    "html-minifier": "^3.5.9",
     "node-sass": "^4.7.2",
     "postcss-cli": "^5.0.0",
     "svgo": "^1.0.4",
@@ -42,9 +41,9 @@
   ],
   "scripts": {
     "bash": "/bin/bash",
-    "build": "./bin/clean.sh && ./bin/build.sh",
-    "clean": "./bin/clean.sh",
+    "build": "yarn clean && ./bin/build.sh",
+    "clean": "rm -rf public/*",
     "lint": "eslint .",
-    "watch": "./bin/clean.sh && docker-compose up"
+    "watch": "yarn clean && docker-compose up"
   }
 }
