@@ -8,4 +8,4 @@ ADD yarn.lock /usr/src/blog
 
 WORKDIR /usr/src/blog
 
-RUN yarn install
+RUN yarn install --frozen-lockfile
